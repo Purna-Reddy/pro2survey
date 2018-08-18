@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title></title>
+</head>
+<body>
+		<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+	<h1 id="title" class="text">The Survey Form</h1>
+	<p id="description" class="text">This is The Survey Form , You can tell us how to improve our website</p>
+	<form id="survey-form" class="text">
+		 * Name:
+		<label id="name-label" ><input type="text" id="name" name="name" aria-describedby="name-format" required placeholder="Enter your name">
+        <span class="error"><p id="name"></p></span></label><br>
+		  * Email:
+		<label id="email-label"><input type="email" id="email" name="email" required placeholder="Enter your Email">
+        <span class="error"><p id="email"></p></span></label>
+		<br>
+		<label id="number-label">
+		* Age:
+		<input type="number" id="number" name="telephone" required placeholder="your Age" min="18" max="99">
+        <span class="error"><p id="telephone_error"></p></span></label><br>
+		<div>
+			<p>Which option best describes your current role?</p>
+
+			<select id="dropdown" name="Role">
+				<option value="student" >Student</option>
+				<option value="Employee">Employee</option>
+				<option value="Full time job">Full time job</option>
+			</select>
+		</div>
+		<div>
+			<p>* How likely is that you would recommend freeCodeCamp to a friend?</p>
+			<fieldset id="name">
+    <input type="radio" value="0" name="name">Definitely
+    <input type="radio" value="0" name="name">Maybe
+    <input type="radio" value="0" name="name">Not sure
+  </fieldset><br>
+
+  
+		</div>
+		<div>
+			<p>Things that should be improved in the future(check all that apply):</p>
+			 <input type="checkbox" name="Fornt-end Projects" value="Fornt-end">Front-end Projects<br>
+            <input type="checkbox" name="Fornt-end Projects" value="Bornt-end">Back-end Projects<br>
+            <input type="checkbox" name="Fornt-end Projects" value="Cornt-end">Data Visualization<br>
+            
+            <input type="checkbox" name="Fornt-end Projects" value="Eornt-end">Gitter Help rooms<br>
+            
+
+		</div>
+		<div>
+			<p>Any Comments or Suggestions?, Fell free to tell..</p>
+          <textarea name="comment" form="usrform">Enter text here...</textarea>
+		</div>
+		<button id="submit" type="submit" >Submit</button>
+	</form>
+
+</body>
+</html>
